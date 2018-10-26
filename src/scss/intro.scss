@@ -1,0 +1,37 @@
+.intro {
+  background: #e9e6df url('../img/bg-intro.jpg') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.intro__content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 1060px;
+  padding-bottom: 200px;
+  box-sizing: border-box;
+}
+
+.intro__slogan-first-row {
+  color: #565656;
+  font-family: $theme-font-decor;
+  font-size: 68px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 6.8px;
+  line-height: 1;
+}
+
+.intro__slogan-second-row {
+  padding: 25px;
+  background-color: transparentize($theme-color-1, 0.1);
+  font-family: $theme-font-decor;
+  color: #fff;
+  font-size: 68px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 6.8px;
+}
+
+

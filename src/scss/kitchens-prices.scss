@@ -1,0 +1,32 @@
+.kitchens-prices {
+    width: 650px;
+    box-sizing: border-box;
+    background-color: transparentize($theme-color-3, 0.1);
+    padding: 40px 85px 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.kitchens-prices__title {
+    margin-bottom: 35px;
+    color: #fff;
+    font-family: $theme-font-decor;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.kitchens-prices__list {
+    display: flex;
+    align-items: center;
+    @include m-reset-list;
+}
+
+.kitchens-prices__item {
+    margin-right: 35px;
+    padding-left: 30px; 
+    background: url("data:image/svg+xml,%3Csvg class='kitchens-prices__item-icon' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='23' height='18'%3E%3Cdefs%3E%3Cpath id='a' d='M472.741 2127.343l-4.35-4.2-2.391 2.31 5.74 5.541.007-.006 1.048 1.012L489 2116.354l-2.438-2.354z'/%3E%3C/defs%3E%3Cuse fill='%233bb1a6' transform='translate(-466 -2114)' xlink:href='%23a'/%3E%3C/svg%3E ") 0 50% no-repeat;
+    background-size: 23px 18px; 
+    color: $theme-color-4;
+}
+

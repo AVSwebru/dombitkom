@@ -1,0 +1,12 @@
+@mixin m-no-link-decor {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@mixin m-reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
