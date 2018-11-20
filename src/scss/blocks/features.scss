@@ -1,7 +1,7 @@
 .features {
 	background: #ebe3de url('../img/bg-features.jpg') 50% 50% no-repeat;
 	background-size: cover;
-	padding: 87px 0 105px;
+	padding: 80px 0 105px;
 }
 
 .features__grid {
@@ -10,19 +10,17 @@
 }
 
 .features__title {
-	margin-bottom: 70px;
+	margin-bottom: 55px;
 	text-align: center;
 	font-family: $theme-font-decor;
 	color: $theme-color-3;
 	font-size: 44px;
 	font-weight: 700;
-	text-transform: uppercase;
 	letter-spacing: 4.4px;
-	
+
 }
 
 .features__title-dots {
 	color: $theme-color-1;
 	letter-spacing: 0;
 }
-

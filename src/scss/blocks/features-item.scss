@@ -1,7 +1,7 @@
 .features-item__desc {
 	height: 275px;
 	box-sizing: border-box;
-	padding: 65px 70px;
+	padding: 59px 70px 30px;
 	background-color: $theme-color-4;
 	&_arrow-to-bottom {
 		position: relative;
@@ -12,7 +12,7 @@
 			background-color: #fff;
 			position: absolute;
 			bottom: -8px;
-			left: 50%;	
+			left: 50%;
 			z-index: 1;
 			transform: translateX(-50%) rotate(45deg);
 		}
@@ -26,7 +26,7 @@
 			background-color: #fff;
 			position: absolute;
 			top: -8px;
-			left: 50%;	
+			left: 50%;
 			z-index: 1;
 			transform: translateX(-50%) rotate(45deg);
 		}
@@ -34,8 +34,8 @@
 }
 
 .features-item__title {
-	margin-bottom: 20px;
-	padding-bottom: 30px;
+	margin-bottom: 16px;
+	padding-bottom: 23px;
 	text-align: center;
 	font-family: $theme-font-decor;
 	color: $theme-color-3;
@@ -58,6 +58,7 @@
 
 .features-item__text {
 	color: $theme-color-3;
+	line-height: 1.3;
 	text-align: center;
 }
 

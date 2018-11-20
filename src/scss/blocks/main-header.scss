@@ -1,4 +1,4 @@
-.header {
+.main-header {
   width: 100%;
   position: absolute;
   top: 0;
@@ -8,24 +8,24 @@
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent);
 }
 
-.header__inner {
+.main-header__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header__rightside {
+.main-header__rightside {
   display: flex;
   align-items: center;
 }
 
-.header__tel {
+.main-header__tel {
   color: $theme-color-4;
   font-family: $theme-font-decor;
   font-size: 17px;
   font-weight: 400;
   line-height: 1.4;
-  @include m-no-link-decor;
+  @include m-reset-link;
   &:hover {
     color: $theme-color-4;
   }

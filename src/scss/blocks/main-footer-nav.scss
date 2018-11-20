@@ -1,0 +1,25 @@
+.main-footer-nav {
+  margin-bottom: 58px;
+}
+
+.main-footer-nav__list {
+  @include m-reset-list;
+  display: flex;
+  align-items: center;
+  margin: 0 -15px;
+}
+
+.main-footer-nav__item {
+  margin: 0 15px;
+}
+
+.main-footer-nav__link {
+  color: #b0afaf;
+  font-family: $theme-font-decor;
+  font-size: 15px;
+  line-height: 1;
+  text-transform: uppercase;
+  &:hover {
+    color: #fff;
+  }
+}

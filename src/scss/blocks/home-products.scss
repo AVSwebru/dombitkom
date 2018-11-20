@@ -1,19 +1,15 @@
 .home-products {
-	padding: 85px 0 135px;
+	padding: 70px 0 100px;
 }
 
 .home-products__grid {
 	display: grid;
-	grid-template-columns: 750px 340px;
+	grid-template-columns: 2fr 1fr;
 	grid-gap: 50px;
-	& > div:nth-child(1) {
-		grid-column: span 1;
-		grid-row: span 2;
-	}
 }
 
 .home-products__title {
-	margin-bottom: 85px;
+	margin-bottom: 70px;
 	color: $theme-color-3;
 	font-family: $theme-font-decor;
 	font-size: 44px;
@@ -21,10 +17,11 @@
 }
 
 .home-products__text {
-	padding: 53px 58px;
+	padding: 40px 58px;
 	background-color: $theme-color-2;
 	font-family: $theme-font-decor;
 	color: $theme-color-3;
 	font-size: 32px;
 	font-weight: 700;
+	line-height: 1.3;
 }

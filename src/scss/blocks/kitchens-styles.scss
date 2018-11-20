@@ -4,7 +4,7 @@
 }
 
 .kitchens-styles__title {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     color: #393939;
     font-family: $theme-font-decor;
     font-size: 18px;
@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     @include m-reset-list;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
 }
 
 .kitchens-styles__item {
@@ -38,20 +38,20 @@
         left: 0px;
     }
 }
-    
+
 .kitchens-styles__examples {
     display: inline-block;
-    padding: 20px 30px;
+    padding: 18px 24px;
     border: 1px solid #cfc8c4;
-    color: #787878;
+    color: #6b6b6b;
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
     text-transform: uppercase;
-    @include m-no-link-decor;
+    @include m-reset-link;
     transition: background-color 0.25s;
     &:hover {
-        color: #787878;
+        color: #6b6b6b;
         background-color: $theme-color-4;
         transition: background-color 0.25s;
     }
