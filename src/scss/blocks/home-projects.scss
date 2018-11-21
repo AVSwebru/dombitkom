@@ -27,13 +27,17 @@
   color: #050708;
   box-shadow: 10px 10px 0 0 $theme-color-1;
 	transition: box-shadow 0.25s;
-  span {
-    color: $theme-color-1;
-  }
 	&:hover {
 		color: #050708;
 		box-shadow: 5px 5px 0 0 $theme-color-1;
 		transition: box-shadow 0.25s;
+	}
+	@media (max-width: $breakpoint-medium) {
+		right: 42px;
+		bottom: 48px;
+	}
+	span {
+		color: $theme-color-1;
 	}
 }
 
@@ -59,6 +63,9 @@
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 30px;
+	@media (max-width: $breakpoint-medium) {
+		width: 150px;
+	}
 }
 
 .home-projects__switcher-pointer {

@@ -2,6 +2,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	@media (max-width: $breakpoint-small) {
+		flex-direction: column;
+	}
 }
 
 .cost-form__input {
@@ -22,8 +25,16 @@
 		font-size: 14px;
 	  color: #232323;
 	}
+	@media (max-width: $breakpoint-small) {
+		width: 280px;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
 }
 
 .cost-form__submit {
 	width: 195px;
+	@media (max-width: $breakpoint-small) {
+		width: 280px;
+	}
 }

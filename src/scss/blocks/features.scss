@@ -1,12 +1,22 @@
 .features {
+	padding: 80px 0 105px;
 	background: #ebe3de url('../img/bg-features.jpg') 50% 50% no-repeat;
 	background-size: cover;
-	padding: 80px 0 105px;
+	@media (max-width: $breakpoint-medium) {
+		padding: 80px 0 180px;
+	}
+	@media (max-width: $breakpoint-small) {
+		padding: 35px 0 45px;
+	}
 }
 
 .features__grid {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(300px, 380px));
+	@media (max-width: $breakpoint-medium) {
+		display: block;
+		height: 100%;
+	}
 }
 
 .features__title {
@@ -17,10 +27,66 @@
 	font-size: 44px;
 	font-weight: 700;
 	letter-spacing: 4.4px;
-
+	@media (max-width: $breakpoint-medium) {
+		font-size: 24px;
+		letter-spacing: 0;
+	}
+	@media (max-width: $breakpoint-small) {
+		margin-bottom: 23px;
+	}
 }
 
 .features__title-dots {
 	color: $theme-color-1;
 	letter-spacing: 0;
+}
+
+.features__wrapper {
+	position: relative;
+	@media (max-width: $breakpoint-medium) {
+		left: 50%;
+		width: 320px;
+		height: 400px;
+		transform: translateX(-50%);
+	}
+	@media (max-width: $breakpoint-small) {
+		width: 280px;
+	}
+}
+
+.features__arrow {
+	position: absolute;
+	top: 46%;
+	display: none;
+	width: 30px;
+	height: 40px;
+	color: #000;
+	&:hover {
+		color: #000;
+	}
+	@media (max-width: $breakpoint-medium) {
+		display: block;
+	}
+	svg {
+		width: 40px;
+		height: 60px;
+	}
+}
+
+.features__arrow-left {
+	@media (max-width: $breakpoint-medium) {
+		left: -70px;
+	}
+	@media (max-width: $breakpoint-small) {
+		left: 10px;
+	}
+}
+
+.features__arrow-right {
+	@media (max-width: $breakpoint-medium) {
+		right: -60px;
+	}
+	@media (max-width: $breakpoint-small) {
+		right: 10px;
+	}
 }

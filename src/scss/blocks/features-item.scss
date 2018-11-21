@@ -1,35 +1,64 @@
+.features-item {
+	display: flex;
+	flex-direction: column;
+	&_img-bottom {
+		.features-item__desc {
+			position: relative;
+			&::before {
+				content: '';
+				width: 16px;
+				height: 16px;
+				background-color: #fff;
+				position: absolute;
+				bottom: -8px;
+				left: 50%;
+				z-index: 1;
+				transform: translateX(-50%) rotate(45deg);
+				@media (max-width: $breakpoint-medium) {
+					top: -8px;
+					left: 50%;
+					transform: translateX(-50%) rotate(45deg);
+				}
+			}
+		}
+	}
+	&_img-top {
+		.features-item__desc {
+			position: relative;
+			&::before {
+				content: '';
+				width: 16px;
+				height: 16px;
+				background-color: #fff;
+				position: absolute;
+				top: -8px;
+				left: 50%;
+				z-index: 1;
+				transform: translateX(-50%) rotate(45deg);
+			}
+		}
+	}
+	@media (max-width: $breakpoint-medium) {
+		.features-item__image {
+			order: 1;
+		}
+		.features-item__desc {
+			order: 2;
+		}
+	}
+}
+
 .features-item__desc {
 	height: 275px;
 	box-sizing: border-box;
 	padding: 59px 70px 30px;
 	background-color: $theme-color-4;
-	&_arrow-to-bottom {
-		position: relative;
-		&::before {
-			content: '';
-			width: 16px;
-			height: 16px;
-			background-color: #fff;
-			position: absolute;
-			bottom: -8px;
-			left: 50%;
-			z-index: 1;
-			transform: translateX(-50%) rotate(45deg);
-		}
+	@media (max-width: $breakpoint-medium) {
+		padding: 65px 32px 30px;
 	}
-	&_arrow-to-top {
-		position: relative;
-		&::before {
-			content: '';
-			width: 16px;
-			height: 16px;
-			background-color: #fff;
-			position: absolute;
-			top: -8px;
-			left: 50%;
-			z-index: 1;
-			transform: translateX(-50%) rotate(45deg);
-		}
+	@media (max-width: $breakpoint-small) {
+		height: 200px;
+		padding: 25px 20px 35px;
 	}
 }
 
@@ -54,6 +83,9 @@
 		left: 50%;
 		transform: translateX(-50%);
 	}
+	@media (max-width: $breakpoint-small) {
+		font-size: 16px;
+	}
 }
 
 .features-item__text {
@@ -65,4 +97,7 @@
 
 .features-item__image {
 	height: 275px;
+	@media (max-width: $breakpoint-small) {
+		height: 203px;
+	}
 }

@@ -1,3 +1,13 @@
+.home-projects-slider__wrapper {
+  height: 544px;
+  @media (max-width: $breakpoint-medium) {
+    height: 440px;
+  }
+  @media (max-width: $breakpoint-small) {
+    height: 200px;
+  }
+}
+
 .home-projects-slider__arrow {
   display: flex;
   align-items: center;

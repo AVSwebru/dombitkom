@@ -1,0 +1,19 @@
+.menu-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: $theme-color-1;
+  @media (max-width: $breakpoint-small) {
+    display: flex;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}

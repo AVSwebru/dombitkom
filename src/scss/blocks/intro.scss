@@ -1,6 +1,9 @@
 .intro {
   background: #e9e6df url('../img/bg-intro.jpg') 50% 50% no-repeat;
   background-size: cover;
+  @media (max-width: $breakpoint-small) {
+    background-position: 50% 48px;
+  }
 }
 
 .intro__content {
@@ -10,6 +13,10 @@
   height: 1060px;
   padding-bottom: 200px;
   box-sizing: border-box;
+  @media (max-width: $breakpoint-small) {
+    height: 375px;
+    padding-bottom: 0;
+  }
 }
 
 .intro__slogan-first-row {
@@ -20,6 +27,10 @@
   text-transform: uppercase;
   letter-spacing: 6.8px;
   line-height: 1;
+  @media (max-width: $breakpoint-small) {
+    font-size: 24px;
+    letter-spacing: 2.5px;
+  }
 }
 
 .intro__slogan-second-row {
@@ -32,4 +43,10 @@
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: 6.8px;
+  @media (max-width: $breakpoint-small) {
+    margin: 0 -20px;
+    padding: 8px 25px;
+    font-size: 24px;
+    letter-spacing: 2.5px;
+  }
 }

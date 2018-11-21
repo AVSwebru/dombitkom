@@ -2,6 +2,9 @@
 	background-color: $theme-color-2;
 	padding: 80px 0;
 	text-align: center;
+	@media (max-width: $breakpoint-small) {
+		padding: 30px 0 48px;
+	}
 }
 
 .home-cost__title {
@@ -10,6 +13,10 @@
 	color: $theme-color-3;
 	font-size: 48px;
 	font-weight: 700;
+	line-height: 1.2;
+	@media (max-width: $breakpoint-small) {
+		font-size: 24px;
+	}
 }
 
 .home-cost__text {

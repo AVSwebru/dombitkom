@@ -1,0 +1,13 @@
+.menu-open-btn {
+  display: none;
+  width: 40px;
+  height: 40px;
+  color: $theme-color-1;
+  @media (max-width: $breakpoint-small) {
+    display: block;
+  }
+  svg {
+    width: 35px;
+    height: 35px;
+  }
+}
