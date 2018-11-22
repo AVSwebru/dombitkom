@@ -1,0 +1,25 @@
+.project-item {
+  @include m-reset-link;
+  color: #050708;
+  &:hover {
+    color: #050708;
+  }
+}
+
+.project-item__image {
+  display: block;
+  height: 320px;
+  margin-bottom: 20px;
+}
+
+.project-item__title {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.project-item__style {
+  display: inline-block;
+  padding: 8px 10px;
+  color: #efefef;
+  background-color: #7c7775;
+}

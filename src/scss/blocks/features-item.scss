@@ -53,7 +53,7 @@
 	box-sizing: border-box;
 	padding: 59px 70px 30px;
 	background-color: $theme-color-4;
-	@media (max-width: $breakpoint-medium) {
+	@media (max-width: $breakpoint-large) {
 		padding: 65px 32px 30px;
 	}
 	@media (max-width: $breakpoint-small) {

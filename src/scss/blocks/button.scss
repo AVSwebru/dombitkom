@@ -8,6 +8,7 @@
   line-height: 1;
   text-transform: uppercase;
   background-image: linear-gradient(to top, #3aa9a0 0%, #3cb9ab 100%);
+  cursor: pointer;
   &:hover {
     background-image: linear-gradient(to top, #3cb9ab 0%, #3aa9a0 100%);
   }

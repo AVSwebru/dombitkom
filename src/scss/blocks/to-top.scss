@@ -11,12 +11,6 @@
   background-color: #f7eee9;
   color: #050708;
   transition: color 0.25s;
-  svg {
-    width: 30px;
-    height: 30px;
-    transform: translateY(2px);
-    transition: transform 0.25s;
-  }
   &:hover {
     color: $theme-color-1;
     transition: color 0.25s;
@@ -24,5 +18,15 @@
       transform: translateY(-2px);
       transition: transform 0.25s;
     }
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+    transform: translateY(2px);
+    transition: transform 0.25s;
+  }
+  @media (max-width: $breakpoint-small) {
+    top: auto;
+    bottom: 0;
   }
 }

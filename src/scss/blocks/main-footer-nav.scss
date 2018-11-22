@@ -1,16 +1,24 @@
 .main-footer-nav {
-  margin-bottom: 58px;
+  margin-bottom: 40px;
 }
 
 .main-footer-nav__list {
   @include m-reset-list;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0 -15px;
+  @media (max-width: $breakpoint-small) {
+    margin: 0;
+  }
 }
 
 .main-footer-nav__item {
-  margin: 0 15px;
+  margin: 10px 15px;
+  @media (max-width: $breakpoint-small) {
+    width: 50%;
+    margin: 0 0 20px 0;
+  }
 }
 
 .main-footer-nav__link {

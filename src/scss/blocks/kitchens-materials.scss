@@ -2,6 +2,12 @@
   padding: 41px 150px 55px 50px;
   box-sizing: border-box;
   background-color: $theme-color-1;
+  @media (max-width: $breakpoint-medium) {
+    padding: 25px 50px;
+  }
+  @media (max-width: $breakpoint-small) {
+    padding: 35px 20px;
+  }
 }
 
 .kitchens-materials__title {
@@ -18,8 +24,12 @@
   @include m-reset-list;
   display: grid;
   grid-template-columns: repeat(3, 125px);
+  grid-column-gap: 5px;
   @media (max-width: $breakpoint-medium) {
     grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: $breakpoint-small) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -27,4 +37,9 @@
   margin-bottom: 14px;
   color: #fff;
   line-height: 1;
+  span {
+    @media (max-width: $breakpoint-small) {
+      display: none;
+    }
+  }
 }

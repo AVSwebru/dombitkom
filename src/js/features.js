@@ -10,6 +10,3 @@
     featuresWrapper.setAttribute('data-uk-slideshow', 'min-height: 380');
   }
 })();
-// min-height: 480
-
-// min-height: 380

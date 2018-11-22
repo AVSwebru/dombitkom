@@ -4,6 +4,9 @@
   @media (max-width: $breakpoint-medium) {
     padding: 25px 50px;
   }
+  @media (max-width: $breakpoint-small) {
+    padding: 35px 20px;
+  }
 }
 
 .kitchens-styles__title {
@@ -28,6 +31,10 @@
   @media (max-width: $breakpoint-medium) {
     margin-bottom: 0;
   }
+  @media (max-width: $breakpoint-small) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .kitchens-styles__item {
@@ -38,18 +45,23 @@
   font-weight: 400;
   line-height: 1;
   position: relative;
-  @media (max-width: $breakpoint-large) {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
   &::before {
     content: '';
     width: 20px;
     height: 1px;
     background-color: #686868;
     position: absolute;
-    top: .5em;
+    top: 0.5em;
     left: 0px;
+  }
+  @media (max-width: $breakpoint-large) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  @media (max-width: $breakpoint-small) {
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
   }
 }
 
@@ -57,6 +69,7 @@
   @include m-reset-link;
   display: inline-block;
   padding: 18px 24px;
+  box-sizing: border-box;
   border: 1px solid #cfc8c4;
   color: #6b6b6b;
   font-size: 14px;
@@ -68,5 +81,9 @@
     color: #6b6b6b;
     background-color: $theme-color-4;
     transition: background-color 0.25s;
+  }
+  @media (max-width: $breakpoint-small) {
+    width: 280px;
+    text-align: center;
   }
 }

@@ -41,7 +41,7 @@
                 </a>
               </li>
               <li class="main-header-nav__item">
-                <a class="main-header-nav__link active" href="#">
+                <a class="main-header-nav__link active" href="projects.html">
                   проекты
                 </a>
               </li>
@@ -76,13 +76,13 @@
     </div>
     <section class="kitchens">
       <div class="uk-container">
-        <div class="kitchens__grid" data-uk-grid>
-          <div class="uk-width-1-2">
+        <div class="uk-grid">
+          <div class="uk-width-1-2@s">
             <h1 class="kitchens__title">
               Мы делаем кухни<br>
               на заказ
             </h1>
-            <img class="kitchens__illustration" src="img/kitchens-image-1.jpg" alt="Изображение наших кухонь №1">
+            <img class="kitchens__illustration-1" src="img/kitchens-image-1.jpg" alt="Изображение наших кухонь №1">
             <section class="kitchens-prices">
               <h2 class="kitchens-prices__title">Расчет стоимости в трех вариантах</h2>
               <ul class="kitchens-prices__list">
@@ -92,7 +92,7 @@
               </ul>
             </section>
           </div>
-          <div class="uk-width-1-2">
+          <div class="uk-width-1-2@s">
             <div class="kitchens__info">
               <section class="kitchens-styles">
                 <h2 class="kitchens-styles__title">по стилям</h2>
@@ -115,11 +115,11 @@
                   <li class="kitchens-materials__item">Шпон</li>
                   <li class="kitchens-materials__item">Иск. камень</li>
                   <li class="kitchens-materials__item">Кварц</li>
-                  <li class="kitchens-materials__item">и многое другое</li>
+                  <li class="kitchens-materials__item">и <span>многое</span> другое</li>
                 </ul>
               </section>
             </div>
-            <img src="img/kitchens-image-2.jpg" alt="Изображение наших кухонь №2">
+            <img class="kitchens__illustration-2" src="img/kitchens-image-2.jpg" alt="Изображение наших кухонь №2">
           </div>
         </div>
       </div>
@@ -198,7 +198,7 @@
         <div class="home-projects__inner">
           <div сlass="home-projects__leftside">
             <h2 class="home-projects__title">Наши работы</h2>
-            <ul class="home-projects__switcher" uk-switcher="connect: .home-projects-slider; animation: uk-animation-fade">
+            <ul class="home-projects__switcher" data-uk-switcher="connect: .home-projects-slider; animation: uk-animation-fade">
               <li class="home-projects__switcher-item">
                 <a class="home-projects__switcher-link" href="#">Прованс</a>
                 <div class="home-projects__switcher-pointer"></div>
@@ -220,7 +220,7 @@
           <div class="home-projects__rightside">
             <ul class="home-projects-slider uk-switcher">
               <li>
-                <div class="home-projects-slider__wrapper" data-uk-slideshow="min-height: 440; animation: push">
+                <div class="home-projects-slider__wrapper" data-uk-slideshow="min-height: 350; animation: push">
                   <div class="uk-position-relative">
                     <ul class="uk-slideshow-items">
                       <li>
@@ -237,7 +237,7 @@
                 </div>
               </li>
               <li>
-                <div class="home-projects-slider__wrapper" data-uk-slideshow="animation: push">
+                <div class="home-projects-slider__wrapper" data-uk-slideshow="min-height: 350; animation: push">
                   <div class="uk-position-relative">
                     <ul class="uk-slideshow-items">
                       <li>
@@ -254,7 +254,7 @@
                 </div>
               </li>
               <li>
-                <div class="home-projects-slider__wrapper" data-uk-slideshow="animation: push">
+                <div class="home-projects-slider__wrapper" data-uk-slideshow="min-height: 350; animation: push">
                   <div class="uk-position-relative">
                     <ul class="uk-slideshow-items">
                       <li>
@@ -271,7 +271,7 @@
                 </div>
               </li>
               <li>
-                <div class="home-projects-slider__wrapper" data-uk-slideshow="animation: push">
+                <div class="home-projects-slider__wrapper" data-uk-slideshow="min-height: 350; animation: push">
                   <div class="uk-position-relative">
                     <ul class="uk-slideshow-items">
                       <li>
@@ -361,7 +361,7 @@
     <div class="uk-container">
       <div class="main-footer__inner">
         <div class="main-footer__leftside">
-          <nav class="main-footer-nav" aria-label="Меню в футере">
+          <nav class="main-footer-nav" aria-label="Разделы сайта">
             <ul class="main-footer-nav__list">
               <li class="main-footer-nav__item">
                 <a class="main-footer-nav__link" href="#">О нас</a>
@@ -386,7 +386,7 @@
               </li>
             </ul>
           </nav>
-          <div class="main-footer-contacts uk-child-width-1-3 uk-grid-medium uk-grid-match" data-uk-grid>
+          <div class="main-footer-contacts uk-child-width-1-3@s uk-grid-medium uk-grid-match" data-uk-grid>
             <div>
               <section class="main-footer-contacts__item" aria-label="Наш офис">
                 <h2 class="main-footer-contacts__item-title">
@@ -413,11 +413,15 @@
                   запись по телефону
                 </h2>
                 <div class="main-footer-contacts__item-text">
-                  +7 (473) 229-83-79
+                  <span class="main-footer-contacts__tel">+7 (473) 229-83-79</span>
                 </div>
               </section>
             </div>
           </div>
+          <button class="main-footer__feedback-btn button js-feedback-btn" type="button" aria-label="Переключение формы обратной связи">
+            Обратная связь
+          </button>
+          <div class="main-footer__feedback-form js-feedback-wrapper"></div>
           <div class="main-footer__bottom">
             <a class="main-footer___devs" href="#" title="Веб-студия avsweb">
               <svg xmlns="http://www.w3.org/2000/svg" width="125" height="40" fill="#3bafa4" viewBox="0 0 936 316">
@@ -444,7 +448,7 @@
           </div>
         </div>
         <div class="main-footer__rightside">
-          <form class="feedback-form" aria-label="Обратная связь">
+          <form class="feedback-form js-feedback" aria-label="Форма обратной связи">
             <h2 class="feedback-form__title">
               Остались вопросы?
             </h2>

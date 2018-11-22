@@ -1,11 +1,11 @@
 .home-projects-slider__wrapper {
-  height: 544px;
-  @media (max-width: $breakpoint-medium) {
-    height: 440px;
-  }
-  @media (max-width: $breakpoint-small) {
-    height: 200px;
-  }
+  // height: 544px;
+  // @media (max-width: $breakpoint-medium) {
+  //   height: 440px;
+  // }
+  // @media (max-width: $breakpoint-small) {
+  //   height: 200px;
+  // }
 }
 
 .home-projects-slider__arrow {
@@ -39,5 +39,8 @@
   text-shadow: 0px 0px 4px rgba(0,0,0,0.5);
   span {
     font-size: 24px;
+  }
+  @media (max-width: $breakpoint-small) {
+    display: none;
   }
 }
