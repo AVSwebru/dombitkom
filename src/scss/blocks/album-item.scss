@@ -1,0 +1,27 @@
+.album-item {
+  display: block;
+  height: 100%;
+  position: relative;
+  &:hover {
+    .album-item__hover {
+      opacity: 1;
+      transition: opacity 0.25s;
+    }
+  }
+}
+
+.album-item__hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 17px;
+  background: transparentize($theme-color-1, 0.15) url('../../img/icon-zoom.svg') calc(100% - 10px) 10px no-repeat;
+  background-size: 25px 25px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.25s;
+}

@@ -1,0 +1,21 @@
+.project-info__subtitle {
+  margin-bottom: 10px;
+  color: #787878;
+  font-family: $theme-font-decor;
+  text-transform: uppercase;
+}
+
+.project-info__title {
+  margin: 0 0 40px 0;
+  padding: 6px 0 6px 14px;
+  border-left: 5px solid $theme-color-1;
+  color: #050708;
+  font-family: $theme-font-decor;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.project-info__text {
+  width: 330px;
+}
