@@ -1,5 +1,9 @@
-.project__note {
-  padding: 56px 0 40px;
+.project-note {
+  margin-bottom: 110px;
+}
+
+.project-note__content {
+  padding: 56px 20px 40px;
   text-align: center;
   position: relative;
   @media (max-width: $breakpoint-medium) {
@@ -25,8 +29,4 @@
     top: -14px;
     left: 0;
   }
-}
-
-.project__album {
-  margin-bottom: 140px;
 }

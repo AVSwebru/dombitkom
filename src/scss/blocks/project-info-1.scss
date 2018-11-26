@@ -1,4 +1,5 @@
 .project-info-1 {
+  margin-bottom: 311px;
   padding: 120px 0 82px;
 }
 
@@ -6,6 +7,10 @@
   width: 530px;
   position: relative;
   z-index: 3;
+}
+
+.project-info-1__text {
+  width: 330px;
 }
 
 .project-info-1__images {
@@ -27,6 +32,18 @@
   top: 0;
   right: 0;
   z-index: 1;
-  width: 79%;
+  width: 100%;
   box-shadow: 11px 19px 38px rgba(50, 50, 51, 0.35);
+}
+
+.project-info-1__decor-square {
+  position: absolute;
+  right: -5%;
+  bottom: -5%;
+  width: 29.8%;
+  box-sizing: border-box;
+  padding-top: 28.5%;
+  background: url("../img/dot.svg") 0 0 repeat;
+  background-size: auto auto;
+  background-size: 8px 8px;
 }

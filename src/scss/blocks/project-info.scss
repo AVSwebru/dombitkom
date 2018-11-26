@@ -1,5 +1,5 @@
 .project-info__subtitle {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #787878;
   font-family: $theme-font-decor;
   text-transform: uppercase;
@@ -7,7 +7,7 @@
 
 .project-info__title {
   margin: 0 0 40px 0;
-  padding: 6px 0 6px 14px;
+  padding-left: 14px;
   border-left: 5px solid $theme-color-1;
   color: #050708;
   font-family: $theme-font-decor;
@@ -17,5 +17,13 @@
 }
 
 .project-info__text {
-  width: 330px;
+  ul {
+    @include m-reset-list;
+    @include m-standard-list;
+    margin-bottom: 40px;
+    margin-left: 35px;
+  }
+  p {
+    margin-left: 35px;
+  }
 }

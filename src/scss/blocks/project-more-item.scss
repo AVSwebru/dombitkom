@@ -1,0 +1,51 @@
+.project-more-item {
+  @include m-reset-link;
+  position: relative;
+  z-index: 6;
+  display: block;
+  height: 560px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.6);
+  }
+  &:hover {
+
+    .project-more-item__hover {
+      opacity: 1;
+      transition: opacity 0.25s;
+    }
+  }
+}
+
+.project-more-item__image {
+  max-height: 100%;
+}
+
+.project-more-item__hover {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 55px 44px;
+  background-color: transparentize($theme-color-1, 0.15);
+  opacity: 0;
+  transition: opacity 0.25s;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid #ffffff;
+  }
+}
