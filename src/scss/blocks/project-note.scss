@@ -1,13 +1,20 @@
 .project-note {
   margin-bottom: 110px;
+  @media (max-width: $breakpoint-medium) {
+    margin-bottom: 88px;
+  }
+  @media (max-width: $breakpoint-small) {
+    margin-bottom: 30px;
+  }
 }
 
 .project-note__content {
+  position: relative;
   padding: 56px 20px 40px;
   text-align: center;
-  position: relative;
+  font-size: 20px;
   @media (max-width: $breakpoint-medium) {
-      padding: 40px 0 25px;
+    padding: 40px 20px 25px;
   }
   &::before {
     content: '';
@@ -28,5 +35,8 @@
     position: absolute;
     top: -14px;
     left: 0;
+  }
+  @media (max-width: $breakpoint-small) {
+    font-size: 16px;
   }
 }

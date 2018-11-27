@@ -21,10 +21,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-end;
   min-height: 640px;
   box-sizing: border-box;
-  padding: 200px 0 80px;
+  padding: 250px 0 0;
+  @media (max-width: $breakpoint-small) {
+    min-height: 590px;
+  }
 }
 
 .project-intro__title {
@@ -34,6 +37,11 @@
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
+  @media (max-width: $breakpoint-small) {
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 1;
+  }
 }
 
 .project-intro__brand {
@@ -44,25 +52,44 @@
 .project-intro__desc {
   margin-bottom: 25px;
   color: #efefef;
+  @media (max-width: $breakpoint-small) {
+    margin-bottom: 20px;
+  }
 }
 
 .project-intro__style {
   display: inline-block;
+  margin-bottom: 65px;
   padding: 4px 10px;
   background-color: rgba(0,0,0,0.5);
   color: #efefef;
+  @media (max-width: $breakpoint-medium) {
+    margin-bottom: 50px;
+  }
 }
 
 .project-intro__price {
-  position: absolute;
-  bottom: 0;
-  right: 20%;
+  position: relative;
+  align-self: flex-end;
   min-width: 430px;
-  padding: 25px;
   box-sizing: border-box;
+  margin-right: 220px;
+  padding: 25px;
   background-color: #fff;
   color: #050708;
   font-size: 20px;
   font-weight: 400;
   text-align: center;
+  span {
+    white-space: nowrap;
+  }
+  @media (max-width: $breakpoint-medium) {
+    min-width: 359px;
+    margin-right: 0;
+  }
+  @media (max-width: $breakpoint-small) {
+    min-width: auto;
+    padding: 21px 37px;
+    text-align: left;
+  }
 }

@@ -21,6 +21,8 @@
 @mixin m-standard-list() {
   li {
     position: relative;
+    margin-bottom: 6px;
+    line-height: 1.1;
     &::before {
       content: '';
       position: absolute;
@@ -29,6 +31,9 @@
       width: 20px;
       height: 1px;
       background-color: #686868;
+    }
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }

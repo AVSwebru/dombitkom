@@ -1,5 +1,11 @@
 .project-info-2 {
   margin-bottom: 100px;
+  @media (max-width: $breakpoint-medium) {
+    margin-bottom: 50px;
+  }
+  @media (max-width: $breakpoint-small) {
+    margin-bottom: 67px;
+  }
 }
 
 .project-info-2__image-1 {

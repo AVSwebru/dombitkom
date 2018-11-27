@@ -78,21 +78,21 @@
             Лофт/Минимализм
           </div>
           <div class="project-intro__price">
-            Стоимость всей кухни 244 000 ₽
+            Стоимость всей кухни <span>244 000 ₽</span>
           </div>
         </div>
       </div>
     </div>
     <section class="project-main">
       <div class="uk-container">
-        <div class="uk-grid-large" data-uk-grid>
-          <div class="uk-width-2-5">
+        <div class="project-main__grid">
+          <div>
             <h2 class="project-main__title">Кухня по адресу Ленинский проспект д.117</h2>
             <div class="project-main__desc">
               Кухня включает в себя разнообразие декоративных фасадов: безопасные фасады с закалённым стеклом легко смотрятся в интерьере кухни, а глухие сборные фасады, соединенные между собой планками
             </div>
           </div>
-          <div class="uk-width-3-5">
+          <div>
             <div class="project-main__info-wrapper">
               <div>
                 <div class="project-main-info">
@@ -155,7 +155,7 @@
     </section>
     <section class="project-info project-info-1">
       <div class="uk-container">
-        <div class="uk-child-width-1-2" data-uk-grid>
+        <div class="uk-grid uk-child-width-1-2@s" data-uk-grid>
           <div>
             <div class="project-info__subtitle">
               Фасад
@@ -178,8 +178,10 @@
           <div>
             <div class="project-info-1__images">
               <img class="project-info-1__image-1" src="img/project-info-image-1.jpg" alt="">
-              <img class="project-info-1__image-2" src="img/project-info-image-2.jpg" alt="">
-              <div class="project-info-1__decor-square"></div>
+              <div class="project-info-1__image-2-wrapper">
+                <img class="project-info-1__image-2" src="img/project-info-image-2.jpg" alt="">
+                <div class="project-info-1__decor-square"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -187,13 +189,13 @@
     </section>
     <section class="project-info project-info-2">
       <div class="uk-container">
-        <div class="uk-child-width-1-2" data-uk-grid>
+        <div class="uk-child-width-1-2@s" data-uk-grid>
           <div>
             <div class="project-info-2__images">
               <img class="project-info-2__image-1" src="img/project-info-image-3.jpg" alt="">
             </div>
           </div>
-          <div>
+          <div class="uk-flex-first uk-flex-last@s">
             <div class="project-info__subtitle">
               Фурнитура
             </div>
@@ -229,7 +231,7 @@
     <section class="project-info project-info-3">
       <div class="uk-container">
         <div class="uk-grid" data-uk-grid>
-          <div class="uk-width-2-5">
+          <div class="uk-width-1-2@s uk-width-2-5@m">
             <div class="project-info__subtitle">
               Столешница
             </div>
@@ -245,7 +247,7 @@
               </p>
             </div>
           </div>
-          <div class="uk-width-3-5">
+          <div class="uk-width-1-2@s uk-width-3-5@m">
             <div class="project-info-3__images">
               <img class="project-info-3__image" src="img/project-info-image-4.jpg" alt="">
             </div>
@@ -257,8 +259,8 @@
       <div class="uk-container">
         <h2 class="project-album__title">Больше фотографий</h2>
       </div>
-      <div class="project-slider" data-uk-slider>
-        <ul class="uk-slider-items">
+      <div class="project-slider js-project-slider" data-uk-slider>
+        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-auto@s">
           <li>
             <img src="img/project-photo-1.jpg" alt="">
           </li>
@@ -289,23 +291,25 @@
     </section>
     <section class="project-bonuses">
       <div class="uk-container">
-        <div class="uk-child-width-1-2" data-uk-grid>
+        <div class="uk-child-width-1-2@s" data-uk-grid>
           <div>
             <div class="project-bonuses__content">
-              <h2 class="project-bonuses__title">
-                Бонусы
-              </h2>
-              <div class="project-bonuses__text">
-                <ul>
-                  <li>Покрасили стыковочную алюминиевую планку в черный </li>
-                  <li>Бесплатный лазерный замер с точным определением градуса угла </li>
-                  <li>Бесплатные документы для строителей (карта розеток, карта фартука)</li>
-                  <li>Бесплатная доставка </li>
-                  <li>Бесплатный монтаж мебели по лазерному уровню (в день доставки)</li>
-                </ul>
+              <div class="project-bonuses__text-block">
+                <h2 class="project-bonuses__title">
+                  Бонусы
+                </h2>
+                <div class="project-bonuses__text">
+                  <ul>
+                    <li>Покрасили стыковочную алюминиевую планку в черный </li>
+                    <li>Бесплатный лазерный замер с точным определением градуса угла </li>
+                    <li>Бесплатные документы для строителей (карта розеток, карта фартука)</li>
+                    <li>Бесплатная доставка </li>
+                    <li>Бесплатный монтаж мебели по лазерному уровню (в день доставки)</li>
+                  </ul>
+                </div>
               </div>
+              <div class="project-bonuses__decor-square"></div>
             </div>
-            <div class="project-bonuses__decor-square"></div>
           </div>
           <div>
             <img class="project-bonuses__image" src="img/project-info-image-5.jpg" alt="">
@@ -332,12 +336,15 @@
           <p>На протяжении нескольких лет мы изготавливаем на заказ кухни у себя на фабрике. Каждый гарнитур – это воплощение стиля, многолетней прочности и «ювелирная» работа профессиональной команды.
         </div>
       </div>
-      <div class="project-more__item-wrapper uk-grid uk-child-width-1-5 uk-grid-collapse">
+      <div class="project-more__item-wrapper uk-grid uk-child-width-1-4@s uk-child-width-1-5@m uk-grid-collapse">
         <div>
           <a class="project-more-item uk-cover-container">
             <img class="project-more-item__image" data-uk-cover src="img/project-photo-4.jpg" alt="">
+            <span class="project-more-item__content">
+              <span class="project-more-item__title">Кухня по адресу Ленинский проспект д.117</span>
+            </span>
             <span class="project-more-item__hover">
-              <span class="project-more-item__title">Название проекта</span>
+              <span class="project-more-item__title">Кухня по адресу Ленинский проспект д.117</span>
               <span class="project-more-item__learnmore">Узнать подробности</span>
             </span>
           </a>
@@ -345,8 +352,11 @@
         <div>
           <a class="project-more-item uk-cover-container">
             <img class="project-more-item__image" data-uk-cover src="img/project-more-1.jpg" alt="">
+            <span class="project-more-item__content">
+              <span class="project-more-item__title">Кухня по адресу Антоново-Овсеенко 1В</span>
+            </span>
             <span class="project-more-item__hover">
-              <span class="project-more-item__title">Название проекта</span>
+              <span class="project-more-item__title">Кухня по адресу Антоново-Овсеенко 1В</span>
               <span class="project-more-item__learnmore">Узнать подробности</span>
             </span>
           </a>
@@ -354,8 +364,11 @@
         <div>
           <a class="project-more-item uk-cover-container">
             <img class="project-more-item__image" data-uk-cover src="img/project-more-1.jpg" alt="">
+            <span class="project-more-item__content">
+              <span class="project-more-item__title">Кухня по адресу Ипподромная д.68б </span>
+            </span>
             <span class="project-more-item__hover">
-              <span class="project-more-item__title">Название проекта</span>
+              <span class="project-more-item__title">Кухня по адресу Ипподромная д.68б </span>
               <span class="project-more-item__learnmore">Узнать подробности</span>
             </span>
           </a>
@@ -363,8 +376,11 @@
         <div>
           <a class="project-more-item uk-cover-container">
             <img class="project-more-item__image" data-uk-cover src="img/project-more-1.jpg" alt="">
+            <span class="project-more-item__content">
+              <span class="project-more-item__title">Кухня по адресу Жилой Массив Олимпийский д.13 </span>
+            </span>
             <span class="project-more-item__hover">
-              <span class="project-more-item__title">Название проекта</span>
+              <span class="project-more-item__title">Кухня по адресу Жилой Массив Олимпийский д.13 </span>
               <span class="project-more-item__learnmore">Узнать подробности</span>
             </span>
           </a>
@@ -372,8 +388,11 @@
         <div>
           <a class="project-more-item uk-cover-container">
             <img class="project-more-item__image" data-uk-cover src="img/project-more-1.jpg" alt="">
+            <span class="project-more-item__content">
+              <span class="project-more-item__title">Кухня по адресу Проспект Труда 72</span>
+            </span>
             <span class="project-more-item__hover">
-              <span class="project-more-item__title">Название проекта</span>
+              <span class="project-more-item__title">Кухня по адресу Проспект Труда 72</span>
               <span class="project-more-item__learnmore">Узнать подробности</span>
             </span>
           </a>

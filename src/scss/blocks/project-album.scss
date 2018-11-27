@@ -1,5 +1,11 @@
 .project-album {
   margin-bottom: 148px;
+  @media (max-width: $breakpoint-medium) {
+    margin-bottom: 70px;
+  }
+  @media (max-width: $breakpoint-small) {
+    margin-bottom: 10px;
+  }
 }
 
 .project-album__title {
@@ -7,4 +13,10 @@
   font-family: $theme-font-decor;
   font-size: 32px;
   font-weight: 700;
+  @media (max-width: $breakpoint-medium) {
+    font-size: 28px;
+  }
+  @media (max-width: $breakpoint-small) {
+    font-size: 24px;
+  }
 }

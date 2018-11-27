@@ -15,7 +15,9 @@
     background-color: rgba(0,0,0,0.6);
   }
   &:hover {
-
+    .project-more-item__content {
+      opacity: 0;
+    }
     .project-more-item__hover {
       opacity: 1;
       transition: opacity 0.25s;
@@ -46,6 +48,31 @@
     right: 20px;
     bottom: 20px;
     left: 20px;
-    border: 1px solid #ffffff;
+    border: 1px solid #fff;
   }
+}
+
+.project-more-item__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  padding: 108% 44px 38px;
+}
+
+.project-more-item__title {
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: $theme-font-decor;
+  font-size: 26px;
+}
+
+.project-more-item__learnmore {
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 400;
 }
