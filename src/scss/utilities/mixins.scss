@@ -21,7 +21,7 @@
 @mixin m-standard-list() {
   li {
     position: relative;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
     line-height: 1.1;
     &::before {
       content: '';

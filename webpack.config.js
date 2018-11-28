@@ -24,9 +24,12 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/
+              test: /\.js$/,
+              loader: 'babel-loader',
+              exclude: /node_modules/,
+              options: {
+                presets: ['es2015']
+              }
             },
             {
                 test: /\.(scss)$/,
@@ -47,18 +50,18 @@ module.exports = {
                             url: false,
                             minimize: true
                         }
-                    }, 
+                    },
                     {
-                        loader: 'postcss-loader', 
+                        loader: 'postcss-loader',
                         options: {
-                            plugins: function () { 
+                            plugins: function () {
                                 return [
                                     require('precss'),
                                     require('autoprefixer')
                                 ];
                             }
                         }
-                    }, 
+                    },
                     {
                         loader: 'sass-loader'
                     }
