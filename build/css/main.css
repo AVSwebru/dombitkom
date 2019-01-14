@@ -9973,7 +9973,8 @@ iframe.uk-cover {
   font-weight: normal;
   font-style: normal; }
 
-.page {
+.page,
+.page__wrapper {
   overflow-x: hidden; }
 
 .main-header {
