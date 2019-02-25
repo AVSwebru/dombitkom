@@ -9947,28 +9947,28 @@ iframe.uk-cover {
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("../fonts/Source Sans Pro/SourceSansPro-Bold.woff"), local("SourceSansPro Bold"), local("SourceSansPro-Bold");
+  src: url("../fonts/SourceSansPro-Bold.woff") type("woff"), local("SourceSansPro Bold"), local("SourceSansPro-Bold");
   font-display: auto;
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("../fonts/Source Sans Pro/SourceSansPro-Regular.woff"), local("SourceSansPro"), local("SourceSansPro-Regular");
+  src: url("../fonts/SourceSansPro-Regular.woff") type("woff"), local("SourceSansPro"), local("SourceSansPro-Regular");
   font-display: auto;
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("../fonts/Source Sans Pro/SourceSansPro-Light.woff"), local("SourceSansProLight"), local("SourceSansPro-Light");
+  src: url("../fonts/SourceSansPro-Light.woff") type("woff"), local("SourceSansProLight"), local("SourceSansPro-Light");
   font-display: auto;
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: "PT Serif";
-  src: url("../fonts/PTSerif/PTSerif.woff"), local("PT Serif"), local("PT Serif-Regular");
+  src: url("../fonts/PTSerif.woff") type("woff"), local("PT Serif"), local("PT Serif-Regular");
   font-display: auto;
   font-weight: normal;
   font-style: normal; }
