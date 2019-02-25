@@ -1,0 +1,13 @@
+.about__section {
+  margin-bottom: 120px;
+}
+
+.about__section-title {
+  color: #050708;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1;
+  @media (max-width: $breakpoint-small) {
+    font-size: 28px;
+  }
+}

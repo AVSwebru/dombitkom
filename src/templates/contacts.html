@@ -10,7 +10,7 @@
 </head>
 
 <body class="page">
-  <header class="main-header">
+  <header class="main-header main-header_standard-innerpage">
     <div class="uk-container">
       <div class="main-header__inner">
         <div class="main-header__leftside">
@@ -59,13 +59,71 @@
       </div>
     </div>
   </header>
-  <main class="contacts">
+  <main class="innerpage contacts">
     <div class="uk-container">
-        <h1 class="portfolio__title">
-            мы делаем:<br>
-            Кухни, Шкафы-купе, Прихожие
-            Рабочие кабинеты, Гостиные
-          </h1>
+      <ul class="breadcrumb uk-breadcrumb">
+        <li><a href="#">Главная</a></li>
+        <li><span>Контакты</span></li>
+      </ul>
+      <h1 class="innerpage__title">
+        Контакты
+      </h1>
+      <div class="contacts__grid">
+        <div class="contacts__image-container">
+          <img class="contacts__image" src="../img/contacts.jpg" width="487" height="635" alt="Контакты">
+        </div>
+        <div class="contacts__info">
+          <ul class="contacts__info-list">
+            <li class="contacts__unit">
+              <div class="contacts__unit-title">Наш офис:</div>
+              <div class="contacts__unit-info">
+                <svg class="contacts__unit-icon" width="13" height="19">
+                  <use xlink:href="/img/sprite.svg#pin">
+                </svg>
+                <span class="contacts__unit-text">
+                  Воронеж, Бахметьева, 2б, оф. 512, 5 этаж (есть лифт)
+                </span>
+              </div>
+            </li>
+            <li class="contacts__unit">
+              <div class="contacts__unit-title">Часы работы:</div>
+              <div class="contacts__unit-info">
+                <svg class="contacts__unit-icon" width="13" height="19">
+                  <use xlink:href="/img/sprite.svg#clock">
+                </svg>
+                <span class="contacts__unit-text">
+                    Вт-Сб: с 9:00 до 20:00
+                </span>
+              </div>
+            </li>
+            <li class="contacts__unit">
+              <div class="contacts__unit-title">Телефон:</div>
+              <div class="contacts__unit-info">
+                <svg class="contacts__unit-icon" width="13" height="19">
+                  <use xlink:href="/img/sprite.svg#clock">
+                </svg>
+                <span class="contacts__unit-text">
+                  <a href="tel:+7(473)2298379">+7 (473) 229-83-79</a>
+                </span>
+              </div>
+            </li>
+            <li class="contacts__unit">
+              <div class="contacts__unit-title">Почта:</div>
+              <div class="contacts__unit-info">
+                <svg class="contacts__unit-icon" width="13" height="19">
+                  <use xlink:href="/img/sprite.svg#clock">
+                </svg>
+                <span class="contacts__unit-text">
+                  <a href="mailto:mail@dombitcom.com">mail@dombitcom.com</a>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__info-text">
+          С февраля 2019 года любой просчет стоимости мебели мы проводим ТОЛЬКО с вашим присутствием у нас в офисе, так как примерный дистанционный расчет всегда неверен. Мы, например, всегда полностью считаем стоимость (включая ручки, подсветки, сушки, всю фурнитуру с доводчиками Blum, пристеночные бортики, цоколя и т.д.), в отличии от других компаний. А так же сильно на цену влияют множество факторов (пленка может быть китайской, а может быть немецкой с технологией SoftTouch, их стоимость отличается в разы) и т.д
+        </div>
+      </div>
     </div>  
   </main>
   <footer class="main-footer">

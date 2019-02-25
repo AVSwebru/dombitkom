@@ -1,0 +1,17 @@
+.dashed-list {
+  @include m-reset-list;
+  li {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 33px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 12px;
+      left: 0;
+      width: 20px;
+      height: 1px;
+      background-color: #686868;
+    }
+  }
+}

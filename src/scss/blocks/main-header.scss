@@ -7,6 +7,22 @@
   padding-top: 30px;
   padding-bottom: 105px;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent);
+  &_standard-innerpage {
+    position: static;
+    padding-bottom: 35px;
+    background-image: 
+      linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent),
+      url('../img/bg-header.jpg');
+    background-position:
+      50% 50%,
+      50% 50%;
+    background-repeat: 
+      no-repeat,
+      no-repeat;
+    background-size:
+      cover,
+      cover;
+  }
   @media (max-width: $breakpoint-small) {
     padding-top: 20px;
     padding-bottom: 30px;

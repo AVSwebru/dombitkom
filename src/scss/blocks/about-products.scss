@@ -1,0 +1,26 @@
+ul.about-products__list {
+  column-count: 2;
+  column-gap: 70px;
+  margin-bottom: 35px;
+  @media (max-width: $breakpoint-small) {
+    columns: auto;
+  }
+}
+
+.about__products__others {
+  margin-left: 35px;
+  margin-bottom: 55px;
+}
+
+.about-products__gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 278px);
+  grid-auto-rows: 186px;
+  grid-gap: 10px;
+  @media (max-width: $breakpoint-large) {
+    grid-template-columns: repeat(2, 278px);
+  }
+  @media (max-width: $breakpoint-small) {
+    grid-template-columns: 278px;
+  }
+}

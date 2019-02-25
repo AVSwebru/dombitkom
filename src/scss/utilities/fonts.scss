@@ -1,34 +1,34 @@
 @font-face {
-  font-family: "Source Sans Pro";
-  src: url("../fonts/SourceSansPro-Bold.woff") type("woff"),
-    local("SourceSansPro Bold"), local("SourceSansPro-Bold");
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Bold.woff') format('woff'),
+    local('SourceSansPro Bold'), local('SourceSansPro-Bold');
   font-display: auto;
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Source Sans Pro";
-  src: url("../fonts/SourceSansPro-Regular.woff") type("woff"),
-    local("SourceSansPro"), local("SourceSansPro-Regular");
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Regular.woff') format('woff'),
+    local('SourceSansPro'), local('SourceSansPro-Regular');
   font-display: auto;
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Source Sans Pro";
-  src: url("../fonts/SourceSansPro-Light.woff") type("woff"),
-    local("SourceSansProLight"), local("SourceSansPro-Light");
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Light.woff') format('woff'),
+    local('SourceSansProLight'), local('SourceSansPro-Light');
   font-display: auto;
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "PT Serif";
-  src: url("../fonts/PTSerif.woff") type("woff"),
-    local("PT Serif"), local("PT Serif-Regular");
+  font-family: 'PT Serif';
+  src: url('../fonts/PTSerif.woff') format('woff'),
+    local('PT Serif'), local('PT Serif-Regular');
   font-display: auto;
   font-weight: normal;
   font-style: normal;
