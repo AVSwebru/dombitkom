@@ -9,11 +9,11 @@
   height: 50px;
   background-color: #fff;
   color: $theme-color-1;
-  @media (max-width: $breakpoint-small) {
-    display: flex;
-  }
   svg {
     width: 30px;
     height: 30px;
+  }
+  @media (max-width: $breakpoint-medium) {
+    display: flex;
   }
 }

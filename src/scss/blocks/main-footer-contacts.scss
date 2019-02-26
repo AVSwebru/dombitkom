@@ -31,5 +31,10 @@
 }
 
 .main-footer-contacts__tel {
+  color: #b0afaf;
   white-space: nowrap;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
 }

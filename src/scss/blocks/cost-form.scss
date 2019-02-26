@@ -1,7 +1,8 @@
-.cost-form {
+.cost-form__row {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 20px;
 	@media (max-width: $breakpoint-small) {
 		flex-direction: column;
 	}
@@ -36,5 +37,13 @@
 	width: 195px;
 	@media (max-width: $breakpoint-small) {
 		width: 280px;
+	}
+}
+
+.cost-form__privacy {
+	color: #050708;
+	a {
+		color: #050708;
+		text-decoration: underline;
 	}
 }

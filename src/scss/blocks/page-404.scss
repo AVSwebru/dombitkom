@@ -1,0 +1,66 @@
+.page-404__inner {
+  display: flex;
+  height: 100vh;
+}
+
+.page-404__leftside {
+  width: 45%;
+  background: #e0f3f1 url('../img/jena.jpg') 50% 50% no-repeat;
+  background-size: cover;
+  @media (max-width: $breakpoint-medium) {
+    display: none;
+  }
+}
+
+.page-404__rightside {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  background-color: #3aaba1;
+  @media (max-width: $breakpoint-medium) {
+    width: 100%;
+  }
+}
+
+.page-404__content {
+  position: relative;
+  top: 15%;
+  text-align: center;
+}
+
+.page-404__number {
+  margin-bottom: 15px;
+  color: #fff;
+  font-family: $theme-font-decor;
+  font-size: 300px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  @media (max-width: $breakpoint-medium) {
+    font-size: 170px;
+  }
+}
+
+.page-404__text {
+  margin-bottom: 35px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.page-404__link {
+  @include m-reset-link;
+  display: inline-block;
+  min-width: 160px;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #050708;
+  text-align: center;
+  color: #fff;
+  font-family: $theme-font-decor;
+  font-size: 15px;
+  text-transform: uppercase;
+  &:hover {
+    color: #fff;
+  }
+}

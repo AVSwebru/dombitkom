@@ -10,8 +10,8 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  height: 1060px;
-  padding-bottom: 200px;
+  height: 100vh;
+  padding-bottom: 16vh;
   box-sizing: border-box;
   @media (max-width: $breakpoint-small) {
     height: 375px;
@@ -27,6 +27,9 @@
   text-transform: uppercase;
   letter-spacing: 6.8px;
   line-height: 1;
+  @media (max-width: $breakpoint-medium) {
+    font-size: 55px;
+  }
   @media (max-width: $breakpoint-small) {
     font-size: 24px;
     letter-spacing: 2.5px;
@@ -43,6 +46,9 @@
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: 6.8px;
+  @media (max-width: $breakpoint-medium) {
+    font-size: 55px;
+  }
   @media (max-width: $breakpoint-small) {
     margin: 0 -20px;
     padding: 8px 25px;
