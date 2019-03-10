@@ -12198,6 +12198,8 @@ iframe.uk-cover {
 .innerpage {
   padding-bottom: 180px;
   background: #f7eee9; }
+  .innerpage_contacts {
+    padding-bottom: 0; }
   @media (max-width: 640px) {
     .innerpage {
       padding-bottom: 90px; } }
@@ -12225,7 +12227,8 @@ iframe.uk-cover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 100px;
-  grid-row-gap: 75px; }
+  grid-row-gap: 75px;
+  padding-bottom: 80px; }
   @media (max-width: 960px) {
     .contacts__grid {
       grid-template-columns: 100%; } }

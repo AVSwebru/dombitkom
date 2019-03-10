@@ -1,6 +1,9 @@
 .innerpage {
   padding-bottom: 180px;
   background: #f7eee9;
+  &_contacts {
+    padding-bottom: 0;
+  }
   @media (max-width: $breakpoint-small) {
     padding-bottom: 90px;
   }
