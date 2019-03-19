@@ -1,7 +1,7 @@
 .project-item {
   @include m-reset-link;
   color: #050708;
-  &:hover {
+  &:hover, &:focus {
     color: #050708;
     .project-item__hover {
       opacity: 1;

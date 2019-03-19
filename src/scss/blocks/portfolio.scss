@@ -18,15 +18,18 @@
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
+  @media (max-width: $breakpoint-small) {
+    font-size: 38px;
+  }
 }
 
 .portfolio__list {
-  padding: 50px 0 110px;
+  padding-bottom: 110px;
   @media (max-width: $breakpoint-medium) {
-    padding: 68px 0 85px;
+    padding-bottom: 85px;
   }
   @media (max-width: $breakpoint-small) {
-    padding: 45px 0 70px;
+    padding-bottom: 70px;
   }
 }
 

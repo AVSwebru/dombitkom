@@ -47,6 +47,11 @@
 
 .project-more__item-wrapper {
   margin-top: 77px;
+  @media (max-width: $breakpoint-large) {
+    & > div:last-of-type {
+      display: none;
+    }
+  }
   @media (max-width: $breakpoint-small) {
     margin-top: 30px;
   }

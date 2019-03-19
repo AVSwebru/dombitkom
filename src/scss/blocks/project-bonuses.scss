@@ -46,16 +46,16 @@
   }
 }
 
-.project-bonuses__text {
-  ul {
-    @include m-reset-list;
-    @include m-standard-list;
-    padding-left: 35px;
-    li {
-      margin-bottom: 20px;
-    }
-  }
-}
+// .project-bonuses__text {
+//   ul {
+//     @include m-reset-list;
+//     @include m-standard-list;
+//     padding-left: 35px;
+//     li {
+//       margin-bottom: 20px;
+//     }
+//   }
+// }
 
 .project-bonuses__decor-square {
   position: absolute;

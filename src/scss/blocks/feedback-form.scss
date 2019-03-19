@@ -10,7 +10,7 @@
 }
 
 .feedback-form__title {
-  margin-bottom: 0;
+  margin: 0;
   color: #fff;
   font-family: $theme-font-decor;
   font-size: 30px;
@@ -46,13 +46,49 @@
   margin-bottom: 18px;
 }
 
+.feedback-form__checkbox {
+	appearance: none;
+	position: absolute;
+  appearance: none;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  &:checked + .feedback-form__privacy::after {
+		display: block;
+  }
+  &:focus + .feedback-form__privacy::before {
+		outline: 5px auto $theme-color-1;
+	}
+}
+
 .feedback-form__privacy {
-  color: #b0afaf;
-  a {
-    color: #b0afaf;
+	position: relative;
+	padding-left: 25px;
+	color: #b0afaf;
+	a {
+		color: #b0afaf;
     text-decoration: underline;
     &:hover {
       color: #fff;
     }
+	}
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #b0afaf;
+  }
+  &::after {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9 7"%3E%3Cdefs%3E%3Cpath id="a" d="M1268.959 6935.044l-5.579 5.911a.12.12 0 0 1-.177 0l-3.167-3.357a.137.137 0 0 1 0-.187l.77-.816a.12.12 0 0 1 .177 0l2.309 2.447 4.72-5.002a.12.12 0 0 1 .178 0l.769.816c.05.051.05.135 0 .188z"/%3E%3C/defs%3E%3Cuse fill="%23b0afaf" xlink:href="%23a" transform="translate(-1260 -6934)"/%3E%3C/svg%3E%0A') 50% 50% no-repeat;
   }
 }

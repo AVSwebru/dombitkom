@@ -2,7 +2,7 @@
   display: block;
   height: 100%;
   position: relative;
-  &:hover {
+  &:hover, &:focus {
     .album-item__hover {
       opacity: 1;
       transition: opacity 0.25s;

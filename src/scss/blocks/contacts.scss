@@ -28,7 +28,7 @@
   @include m-reset-list;
   li {
     margin-bottom: 35px;
-    &:last-of-type {
+    &:last-of-type {  
       margin-bottom: 0;
     }
   }
@@ -48,4 +48,9 @@
     @include m-reset-link;
     color: $global-color;
   }
+}
+
+.contacts__unit-icon {
+  margin-right: 5px;
+  fill: #00aea2;
 }

@@ -1,9 +1,9 @@
-.home-product-small {
+.home-product-small:not(:last-child) {
 	margin-bottom: 40px;
 }
 
 .home-product-small__desc {
-	margin-bottom: 68px;
+	margin-bottom: 75px;
 	font-family: $theme-font-decor;
 	color: $theme-color-3;
 	font-size: 32px;
