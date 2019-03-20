@@ -11593,8 +11593,9 @@ iframe.uk-cover {
 
 .project-intro__style {
   display: inline-block;
+  padding: 5px 10px;
   margin-bottom: 65px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   color: #efefef; }
   @media (max-width: 960px) {
     .project-intro__style {
